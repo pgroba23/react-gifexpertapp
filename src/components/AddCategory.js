@@ -8,6 +8,7 @@ export const AddCategory = ( { setCategories } ) => {
 
     const handleChange = ( e ) => {
         setInputValue( e.target.value );
+        //console.log('Paso por aca= '+ inputValue);
     };
 
     const handleSubmit = ( e ) => {
@@ -23,6 +24,7 @@ export const AddCategory = ( { setCategories } ) => {
 
     return (
         <form onSubmit={ handleSubmit }>
+            <p>{ inputValue }</p>
           <input 
             type="text"
             value={ inputValue }
